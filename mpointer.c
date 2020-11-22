@@ -13,16 +13,16 @@ int main(){
 	dp=&p;
 	tp=&dp;
 
-	func1(&i);
-	printf("i = %d\n",i);
-	func2(&p);
+	func1(&i);  //100+100=200
+	printf("i = %d\n",i);  
+	func2(&p); //200+100=300
 	printf("*p = %d\n",*p);
-        func3(&dp);
+        func3(&dp);  //300+100=400
 	printf("**dp = %d\n",**dp);
-	func4(&tp);
+	func4(&tp);  //400+100=500
 	printf("***tp = %d\n",***tp);
 
-	printf("i = %d\n",i);
+	printf("i = %d\n",i); // i=500
 	return 0;
 }
 
